@@ -13,41 +13,17 @@ import * as Contracts from ".";
 declare module "hardhat/types/runtime" {
   interface HardhatEthersHelpers extends HardhatEthersHelpersBase {
     getContractFactory(
-      name: "Floppy",
+      name: "CrowdSale",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Floppy__factory>;
+    ): Promise<Contracts.CrowdSale__factory>;
     getContractFactory(
-      name: "FLPCrowdSale",
+      name: "Hust",
       signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.FLPCrowdSale__factory>;
-    getContractFactory(
-      name: "Floppy",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Floppy__factory>;
+    ): Promise<Contracts.Hust__factory>;
     getContractFactory(
       name: "USDT",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.USDT__factory>;
-    getContractFactory(
-      name: "Vault",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.Vault__factory>;
-    getContractFactory(
-      name: "AccessControl",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.AccessControl__factory>;
-    getContractFactory(
-      name: "AccessControlEnumerable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.AccessControlEnumerable__factory>;
-    getContractFactory(
-      name: "IAccessControl",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IAccessControl__factory>;
-    getContractFactory(
-      name: "IAccessControlEnumerable",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IAccessControlEnumerable__factory>;
     getContractFactory(
       name: "Ownable",
       signerOrOptions?: ethers.Signer | FactoryOptions
@@ -68,60 +44,22 @@ declare module "hardhat/types/runtime" {
       name: "IERC20",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.IERC20__factory>;
-    getContractFactory(
-      name: "ERC165",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.ERC165__factory>;
-    getContractFactory(
-      name: "IERC165",
-      signerOrOptions?: ethers.Signer | FactoryOptions
-    ): Promise<Contracts.IERC165__factory>;
 
     getContractAt(
-      name: "Floppy",
+      name: "CrowdSale",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.Floppy>;
+    ): Promise<Contracts.CrowdSale>;
     getContractAt(
-      name: "FLPCrowdSale",
+      name: "Hust",
       address: string,
       signer?: ethers.Signer
-    ): Promise<Contracts.FLPCrowdSale>;
-    getContractAt(
-      name: "Floppy",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.Floppy>;
+    ): Promise<Contracts.Hust>;
     getContractAt(
       name: "USDT",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.USDT>;
-    getContractAt(
-      name: "Vault",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.Vault>;
-    getContractAt(
-      name: "AccessControl",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.AccessControl>;
-    getContractAt(
-      name: "AccessControlEnumerable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.AccessControlEnumerable>;
-    getContractAt(
-      name: "IAccessControl",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IAccessControl>;
-    getContractAt(
-      name: "IAccessControlEnumerable",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IAccessControlEnumerable>;
     getContractAt(
       name: "Ownable",
       address: string,
@@ -147,16 +85,6 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.IERC20>;
-    getContractAt(
-      name: "ERC165",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.ERC165>;
-    getContractAt(
-      name: "IERC165",
-      address: string,
-      signer?: ethers.Signer
-    ): Promise<Contracts.IERC165>;
 
     // default types
     getContractFactory(
